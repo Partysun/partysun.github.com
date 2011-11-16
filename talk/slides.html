@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahe (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>Viper Engine Презентация</title>
+
+    <meta charset='utf-8'>
+    <script
+      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+  </head>
+  
+  <style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */    
+  </style>
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular'>
+      
+      <article>
+        <h1>
+          Viper Engine + 
+          <br>
+          PlayN
+        </h1>
+        <p>
+          Yura Zatsepin
+          <br>
+          4 October 2011
+        </p>
+      </article>      
+      
+      <article class='smaller'>
+        <h3>
+          Игровой движок Viper
+        </h3>
+        <p>
+          Viper это библиотека для быстрой разработки 2d игр на языке Java для платформ: 
+          HTML5, Native, Android, Flash(!). 
+          </p>
+          <p>Он полностью свободный для комерческого и персонального использования.</p>  
+          <p>Viper создавался с целью - просто сесть и делать игры с максимальной абстракцией от платформы, создания графики/анимации, упраления.</p>  
+          <p>Движок основан на PlayN - http://code.google.com/p/playn/ ; AndEngine(Java) и Flixel(as3)</p>               
+      </article>
+
+      <article>
+        <h3>
+          Основные особенности:
+        </h3>
+        <ul>
+          <li>
+            Спрайтовая Анимация
+          </li>
+          <li>
+            Модификация спрайтов
+          </li>
+          <li>
+            Легковесная физика
+          </li>
+          <li>
+            Игровые Сцены
+          </li>
+           <li>
+            Эффектов частиц
+          </li>
+           <li>
+            Контроллеры управления
+          </li>
+           <li>
+            Система камер
+          </li>
+          <li>
+            Update(); Draw(); 
+          </li>
+        </ul>
+      </article>
+      <article class='smaller'>
+        <h3>
+          Пример простого приложения:
+        </h3>
+        <p>
+        Входной класс требует наследования от VipGame.
+        </p>
+        <p>        
+        <pre>
+        public class ViperExamples extends VipGame {
+          public ViperExamples() {
+            super(640, 480, 640, 480, new PlayState(), 33);
+          }   
+        }
+        </pre>
+        </p>
+        <p>
+          Класс игровой сцены наследуется от VipState.
+        </p>
+        <p>
+        <pre>
+        @Override public void create() {
+        //Simple loop Animation
+          final VipAnimatedSprite exp = new VipAnimatedSprite(0, 0, 
+            "images/BOW_Spritesheet4x3.png", 80, 80, 4, 3, 12);
+          int [] a = {0,1,2,3,4,5,6,7,8,9,10,11};
+          exp.addAnimation("explosion", a, 9, true);
+          exp.play("explosion");
+          add(exp);
+        }       
+        </pre>
+      </article>      
+     
+     <article class='fill'>
+        <h3>Easy Animation Sample</h3>
+        <iframe style="position: absolute; top: 140px; left:100px;" src='http://viperplayn.appspot.com/SampleAnimation.html'></iframe>
+      </article>
+      
+      <article class='fill'>
+        <iframe style="position: absolute; top: 20px; left:100px;" src='http://viperplayn.appspot.com'></iframe>
+      </article>
+      
+      <article>
+        <h3>Роль технологий Google</h3>
+        <h3>PlayN</h3>   
+        <p>Библиотека с открытым исходным кодом для создания игр на платформах HTML5/Flash/Android/Native на языке Java.</p> 
+        <p>Компоненты PlayN:</p>        
+        <ul>
+        <li>The Game loop</li>        
+        <li>I/O System</li>
+        <li>Asset Management</li>      
+        </ul>        
+        <p>Абстракция от платформ</p>
+      </article>
+      
+      <article>
+        <h3>Роль технологий Google</h3>
+        <h3>GWT</h3>
+        <img style="position: absolute; top: 340px; left: 500px" src="images/gwt-logo.png"/>
+        <ul>
+        <li>Удаляется неиспользованный код</li>        
+        <li>Оптимизация JS</li>
+        <li>Обфускация</li>
+        <li>Абстракция от браузеров</li>
+        </ul>        
+      </article>
+      
+      
+       <article>
+       <h3>Развитие проекта</h3>
+        <p>
+          На текущий момент библиотека PlayN имеет очень нестабильную работу backend'ов Android и Flash.
+          Из за этого основное развитие будет закладываться на создание собственного backend'а для Android.
+          Также развитие сетевых возможностей фреймворка. В данный момент идет разработка социальной игры с клиентской частью HTML5 написанной на связке PlayN/Viper.
+        </p>        
+      </article>
+      
+      <article>
+        <h3>
+          Спасибо Вам!
+        </h3>        
+        <ul>
+          <li>yura.zatsepin@gmail.com</li> 
+          <li>Viper Demos and Github link : viperplayn.appspot.com</li>
+          <li>
+            <a href='https://github.com/Partysun/Viper-Engine-Demos'>Github source</a></li>
+        </ul>
+      </article>     
+    
+    </section>
+
+  </body>
+</html>
