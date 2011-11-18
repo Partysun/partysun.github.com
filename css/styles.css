@@ -116,6 +116,13 @@ header #zatsepin{
   letter-spacing: 1px;  
 }
 
+.date {
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px;
+    color: #999;
+}
+
 nav {
   float: left;
   width: 125px;

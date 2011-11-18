@@ -41,7 +41,7 @@
       <a href="https://github.com/Partysun" id="github">
         <img src="/images/octocat.png" alt="github" title="Partysun on GitHub" height="64" width="64" />
       </a>
-      <a href="https://twitter.com/holman" id="twitter">
+      <a href="https://twitter.com/YuraSun" id="twitter">
         <img src="/images/twitter.png" alt="twitter" title="Partysun on Twitter" height="32" width="32" />
       </a>      
     </div>        
@@ -53,7 +53,17 @@
   </nav>
 </header>
 
-
+<div class="date">
+      <script type="text/javascript">
+      <!-- 
+      // Array of day names
+      var dayNames = new Array("Воскресенье","Понедельник","Вторник","Среда",
+      				"Четверг","Пятница","Субота");          
+      var now = new Date().getDay();                  
+      document.write("Веселая " + dayNames[now] + " =)");      
+      // -->
+      </script>
+</div>
 {{ content }}
 
 </body>

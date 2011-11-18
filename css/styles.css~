@@ -116,6 +116,12 @@ header #zatsepin{
   letter-spacing: 1px;  
 }
 
+.date {
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
 nav {
   float: left;
   width: 125px;
@@ -142,7 +148,7 @@ nav .site {
 }
 
 nav #html-logo {
-  margin-left: 10px;    
+  margin-left: 6px;    
 }
 
 #post{
