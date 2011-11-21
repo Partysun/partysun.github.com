@@ -9,11 +9,29 @@ layout: layout
   </div>
 
   <div class="whoring">
-    <h3>Обсуждения и ссылки</h3>
+  <h3>Обсуждения и ссылки</h3>
+  {% if page.comments %}
+ 
+  <div id="disqus_thread"></div>
+ 
+  <script type="text/javascript" src="http://partysun.disqus.com/combination_widget.js?num_items=5&hide_mods=0&color=blue&default_tab=people&excerpt_length=200"></script><a href="http://disqus.com/">Powered by Disqus</a>
+  <script
+      type="text/javascript"
+      src="http://disqus.com/forums/partysun/embed.js">
+  </script>
+  <noscript>
+      <a href="http://partysun.disqus.com/?url=ref">View the discussion thread.</a>
+  </noscript>
+ 
+ <a href="http://disqus.com" class="dsq-brlink">
+   blog comments powered by <span class="logo-disqus">Disqus</span>
+ </a>
+ 
+ {% endif %}
     <div class="copy">
       <a href="https://twitter.com/YuraSun"><img src="/images/apple-touch-icon.png" height="50" width="50" /></a>
       <p>
-        Я разработчик и творец. Писал на Java Enterprise, творил игры на Java/Lua/Python/Action Script 3 для разных платформ и делал совершенно ненужные web копипасты. Этот блог создается вдохновением от компаний Github и 37Signals.
+        Я разработчик и творец. Писал на Java случайно Enterprise, творил игры на Java/Lua/Python/Action Script 3 для разных платформ и делал совершенно ненужные web копипасты. Этот блог создается вдохновением от компаний Github и 37Signals.
       </p>  
       
       <a href="https://plus.google.com/111389731599081716229">
