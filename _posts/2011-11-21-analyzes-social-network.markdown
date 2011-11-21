@@ -35,7 +35,8 @@ permalink: /2011/11/analyzen-part1/
 **Получаем список пользователей и их любимые игры**
 
 {% highlight python %}
-def parseUsers(address='http://kanobu.ru/accounts/?ord=d&by=rating&page=', begin = 1, end = 3):
+def parseUsers(address='http://kanobu.ru/accounts/?ord=d&by=rating&page=',
+ begin = 1, end = 3):
     """
         Возвращает список всех пользователей с адресами их страничек
     """
