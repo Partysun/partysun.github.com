@@ -9,7 +9,7 @@ permalink: /2011/20/open-digest/
 ### Читалка для браузера от Evernote - Clearly »
 [Потрясающее расширение для Chrome]("http://www.evernote.com/about/download/clearly.php") .
 
-<img href="http://blog.evernote.com/wp-content/uploads/2011/11/evernote_clearly.png"></img>
+<img src="http://blog.evernote.com/wp-content/uploads/2011/11/evernote_clearly.png"></img>
 
 Evernote сделали для чтения в интернете просто сумасшедшую вещь. 
 
