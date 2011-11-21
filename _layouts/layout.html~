@@ -57,10 +57,10 @@
       <script type="text/javascript">
       <!-- 
       // Array of day names
-      var dayNames = new Array("Воскресенье","Понедельник","Вторник","Среда",
-      				"Четверг","Пятница","Субота");          
+      var dayNames = new Array("Счастливое Воскресенье","Радостный Понедельник","Клевый Вторник","Позитивная Среда",
+      				"Веселый Четверг","Добрая Пятница","Хорошая Субота");          
       var now = new Date().getDay();                  
-      document.write("Веселая " + dayNames[now] + " =)");      
+      document.write(dayNames[now] + " =)");      
       // -->
       </script>
 </div>
