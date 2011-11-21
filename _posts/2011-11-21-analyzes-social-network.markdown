@@ -35,7 +35,7 @@ permalink: /2011/11/analyzen-part1/
 **Получаем список пользователей и их любимые игры**
 
 '''python
-
+.{% highlight html %}
 def parseUsers(address='http://kanobu.ru/accounts/?ord=d&by=rating&page=', begin = 1, end = 3):
     """
         Возвращает список всех пользователей с адресами их страничек
@@ -93,6 +93,7 @@ def parseGameByUser(address):
                 games.append(item.string)
            
     return games
+{% endhighlight %}
 '''
 
 **Делаем методы для анализа данных**
