@@ -120,6 +120,7 @@ header #zatsepin{
     float: right;
     margin-top: 50px;
     margin-right: 50px;
+    color: #999;
 }
 
 nav {
