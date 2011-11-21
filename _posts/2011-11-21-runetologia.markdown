@@ -48,7 +48,7 @@ permalink: /2011/21/runetologia/
 
 ## К ответу
 
-Все просто Рунет догоняет запад. Сейчас где-то от 1 года до 2ух лет наше отставание, что вполне хороший факт. А управляют Рунетом ребята из San Francisco, место где законодатели мод вершат судьбу самого главного открытия человечества - *Интернета*.
+Все просто Рунет догоняет запад. Сейчас где-то от 1 года до 2ух лет наше отставание, что не так уж и плохо. А управляют Рунетом ребята из San Francisco, место где законодатели мод вершат судьбу самого главного открытия человечества - *Интернета*.
 
 Создатели новой сети:
 
@@ -56,7 +56,7 @@ permalink: /2011/21/runetologia/
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sergey_Brin.JPG/210px-Sergey_Brin.JPG" alt="Скачал весь интернет"></img>
 
-<img style="width: 25%; height=25%;" src="http://david.heinemeierhansson.com/images/headshot.jpg" alt="Создал Ruby on Rails и заставил всех в него поверить"></img>
+<img style="width: 30%; height=30%;" src="http://david.heinemeierhansson.com/images/headshot.jpg" alt="Создал Ruby on Rails и заставил всех в него поверить"></img>
 
 Увидимся на страницах сети.
 
