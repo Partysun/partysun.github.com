@@ -25,7 +25,7 @@ hr{
 }
 .content{
   margin-left: 180px;
-  width: 650px;
+  width: 700px;
   margin-bottom: 50px;
 }
 .content ul{
