@@ -56,7 +56,7 @@ permalink: /2011/21/runetologia/
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sergey_Brin.JPG/210px-Sergey_Brin.JPG" alt="Скачал весь интернет"></img>
 
-<img src="http://david.heinemeierhansson.com/images/headshot.jpg" alt="Создал Ruby on Rails и заставил всех в него поверить"></img>
+<img style="width: 25%; height=25%;" src="http://david.heinemeierhansson.com/images/headshot.jpg" alt="Создал Ruby on Rails и заставил всех в него поверить"></img>
 
 Увидимся на страницах сети.
 
