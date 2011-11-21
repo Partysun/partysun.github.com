@@ -34,7 +34,7 @@ permalink: /2011/11/analyzen-part1/
 
 **Получаем список пользователей и их любимые игры**
 
-.{% highlight python %}
+{% highlight python %}
 def parseUsers(address='http://kanobu.ru/accounts/?ord=d&by=rating&page=', begin = 1, end = 3):
     """
         Возвращает список всех пользователей с адресами их страничек
@@ -99,7 +99,7 @@ def parseGameByUser(address):
 Создадим отдельный модуль analysis.py
 В нем будем собирать методы для анализа данных. Сейчас мы сделаем самое простое, что можно сделать. Выясним на сколько близки люди по совпадениям в их предпочтениях. Это нельзя назвать хорошим методом оценки подобия людей по их предпочтениям, но задача создать метод, который будет в дальнейшем вроде как заглушки. Можно будет переписать метод используя более точные алгоритмы. 
 
-.{% highlight python %}
+{% highlight python %}
 
 def sim(prefs, person1, person2):
     """Выясняет, на сколько близки два человека
@@ -146,7 +146,7 @@ def topMatches(prefs,person,n=5,similarity=sim):
 
 Итак, нам надо узнать кто имеет схожии предпочтения с пользователем 'molly doe'. 
 
-.{% highlight python %}
+{% highlight python %}
 
     from analysis import sim
     from analysis import topMatches
