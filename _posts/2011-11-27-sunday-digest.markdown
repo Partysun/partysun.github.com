@@ -12,7 +12,8 @@ permalink: /2011/20/open-digest/
 
 ### 2) Интересный способ для быстрой верстки. Отличный подход к сниппетам.
 [Дзен Кодинг](http://code.google.com/p/zen-coding/)
-К пример:
+
+К примеру:
 
     div#page>div.logo+ul#navigation>li*5>a
 
