@@ -19,14 +19,15 @@ div#page>div.logo+ul#navigation>li*5>a
 
     <div id="page">
         <div class="logo"></div>
-	        <ul id="navigation">
-		                <li><a href=""></a></li>
-				                <li><a href=""></a></li>
-						                <li><a href=""></a></li>
-								                <li><a href=""></a></li>
-										                <li><a href=""></a></li>
-												        </ul>
-													</div>
+            <ul id="navigation">
+                <li><a href=""></a></li>
+            	<li><a href=""></a></li>
+            	<li><a href=""></a></li>
+            	<li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+	</div>    
+    </div>
 ### 3) Куча спичей по различным темам + русские субтитры.
 [TED](http://www.ted.com/translate/languages/ru)
 
