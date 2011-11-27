@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Анализируем социальные сети(начало)</title>
+  <meta name="author" content="Yura Zatsepin" />
+  <meta name="description" content="Writings and talks by Yura Zatsepin. Yura cofounder LookAtTree." />  
+  <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+  <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (device-width: 768px)" href="/css/ipad.css" type="text/css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <!--[if lt IE 9]>  
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+  <![endif]--> 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/javascript/application.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      
+    });
+  </script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18909988-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+
+<header>
+  <a href="/">
+    <img src="/images/apple-touch-icon.png" class="avatar" />
+  </a>
+
+  <div id="me">
+    <a href="/">
+      <span id="zatsepin">Зацепин</span>
+      <span id="yura">Юрий</span>      
+    </a>
+  </div>
+
+  <nav>
+    <div class="site">
+      <a href="https://github.com/Partysun" id="github">
+        <img src="/images/octocat.png" alt="github" title="Partysun on GitHub" height="64" width="64" />
+      </a>
+      <a href="https://twitter.com/YuraSun" id="twitter">
+        <img src="/images/twitter.png" alt="twitter" title="Partysun on Twitter" height="32" width="32" />
+      </a>      
+    </div>        
+    <ul>
+      <li><a href="/about">Обо мне</a></li>
+      <li><a href="/talks">Доклады</a></li>
+      <li><a href="/">Статьи</a></li>
+    </ul>
+    <img id="html-logo" src="/images/HTML5.png" width="48" height="48" alt="HTML5 Powered with CSS3 / Styling, Device Access, and    Semantics" title="HTML5 Powered with CSS3 / Styling, Device Access, and Semantics">    
+  </nav>
+</header>
+
+<div class="date">
+      <script type="text/javascript">
+      <!-- 
+      // Array of day names
+      var dayNames = new Array("Счастливое Воскресенье","Радостный Понедельник","Клевый Вторник","Позитивная Среда",
+      				"Веселый Четверг","Добрая Пятница","Хорошая Субота");          
+      var now = new Date().getDay();                  
+      document.write(dayNames[now] + " =)");      
+      // -->
+      </script>
+</div>
+<div class="content">
+  <div id="post">
+    <h1>
+  <a href="/2011/11/analyzen-part1/">Анализируем социальные сети(начало)</a>
+</h1>
+<div class="authoring">
+  November 21, 2011
+</div>
+
+    <p>Если спросить человека на улице о том, как его зовут и где он учился, это вызовет возможно недоумение,а возможно и начальную стадию агрессии к вам. В то же время в интернете люди публикуют о себе информацию совершенно свободно. Получить доступ к личным данным человека теперь очень просто, а узнать чего хотят люди? В начале 90тых появился термин &ldquo;Коллаборативная фильтрация&rdquo;.</p>
+
+<blockquote>Коллаборативная фильтрация, cовместная фильтрация (англ. collaborative filtering) — метод, дающий автоматические прогнозы (фильтрацию) относительно интересов пользователя по собранной информации о вкусах множества пользователей (сотрудничающих между собой).</blockquote>
+
+
+<h2>Мы хотим узнать чего хочет человек?</h2>
+
+<p>Проведем один маленький эксперимент,чтобы показать весь процесс анализа, который надо провести для решения подобной задачи. Я покажу лишь, как может выглядеть процесс. Задача и ее решение должны привести к быстрому profit'у дабы подогреть интерес к теме.</p>
+
+<h2>Kanobu и Gamers</h2>
+
+<p>Есть такой user generated игровой портал &ndash; Kanobu.ru.
+На нем больше 100к зарегистрированных пользователей, которые ведут блоги и общаются на игровую тематику. Все профили пользователей в открытом доступе. <a href="http://kanobu.ru/accounts/">http://kanobu.ru/accounts/</a>. Каждый пользователь может отметить для себя список любимых книг, фильмов и конечно игр.
+Мы можем получить эту информацию и провести анализ.
+Для разработки будем использовать Python. (<em>Причина &ndash; I hate Ruby.</em>)
+Полный исходный код хранится на <a href="https://github.com/Partysun/analyzesn">ссылка на github</a>.</p>
+
+<p><strong>Задачи:</strong></p>
+
+<ul>
+<li>Получить имена игроков и их профили с сайта Kanobu.ru</li>
+<li>Узнать любимые игры по профилю</li>
+<li>Взять пользователя Kanobu и получить список людей со схожими вкусами.</li>
+</ul>
+
+
+<p><em>Profit!</em></p>
+
+<p><strong>Для получения информации</strong>:</p>
+
+<p>Используем библиотеку BeatifulSoup для парсинга html. urllib2 для работы с http запросами.
+Инфу по установке и получению BS и urllib2 можно с легкостью найти в сети.
+Для получения данных напишем модуль parseGames.py.</p>
+
+<p><strong>Получаем список пользователей и их любимые игры</strong></p>
+
+<p>Liquid error: undefined method `join' for #&lt;String:0x9767dd0></p>
+
+<p><strong>Делаем методы для анализа данных</strong></p>
+
+<p>Создадим отдельный модуль analysis.py
+В нем будем собирать методы для анализа данных. Сейчас мы сделаем самое простое, что можно сделать. Выясним на сколько близки люди по совпадениям в их предпочтениях. Это нельзя назвать хорошим методом оценки подобия людей по их предпочтениям, но задача создать метод, который будет в дальнейшем вроде как заглушки. Можно будет переписать метод используя более точные алгоритмы.</p>
+
+<p>Liquid error: undefined method `join' for #&lt;String:0x9767484></p>
+
+<p>Итак, нам надо узнать кто имеет схожии предпочтения с пользователем &lsquo;molly doe&rsquo;.</p>
+
+<p>Liquid error: undefined method `join' for #&lt;String:0x975c9bc></p>
+
+<p><em>Profit!</em></p>
+
+<h2>Заключение</h2>
+
+<p>Получить информацию просто. Провести хороший анализ более сложная задача. Задача этой статьи показать весь путь от начала и до успешного завершения. В дальнейшем я напишу более интересные способы анализа и что это может дать с точки зрения бизнеса. Вообще узнать информацию о будущих клиентах это круто. А помогать клиентам получать то что они хотят это вообще задача номер один. Именно по этому тысячи сайтов используют алгоритмы рекомендаций и улавливают предпочтения своих клиентов.</p>
+
+  </div>
+
+  <div class="whoring">
+  <h3>Обсуждения и ссылки</h3>
+ 
+  <div id="disqus_thread"></div>
+ 
+  <script
+      type="text/javascript"
+      src="http://disqus.com/forums/partysun/embed.js">
+  </script>
+  <noscript>
+      <a href="http://partysun.disqus.com/?url=ref">View the discussion thread.</a>
+  </noscript>  
+    <div class="copy">
+      <a href="https://twitter.com/YuraSun"><img src="/images/apple-touch-icon.png" height="50" width="50" /></a>
+      <p>
+        Я разработчик и творец. Писал на Java Enterprise, творил игры на Java/Lua/Python/Action Script 3 для разных платформ и делал совершенно ненужные web копипасты. Этот блог создается вдохновением от компаний Github и 37Signals.
+      </p>  
+      
+      <a href="https://plus.google.com/111389731599081716229">
+        <img src="/images/gplus.png" alt="twitter" title="Partysun on Google+" height="32" width="32" />
+      </a>    
+      <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="YuraSun">Tweet</a>
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <a href="http://twitter.com/YuraSun" class="twitter-follow-button" data-show-count="false">Follow Partysun</a>
+      <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
