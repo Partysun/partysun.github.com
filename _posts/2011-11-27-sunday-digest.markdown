@@ -13,7 +13,8 @@ permalink: /2011/20/open-digest/
 ### 2) Интересный способ для быстрой верстки. Отличный подход к сниппетам.
 [Дзен Кодинг](http://code.google.com/p/zen-coding/)
 К пример:
-div#page>div.logo+ul#navigation>li*5>a
+
+    div#page>div.logo+ul#navigation>li*5>a
 
 Преобразуется:
 
@@ -26,8 +27,9 @@ div#page>div.logo+ul#navigation>li*5>a
             	<li><a href=""></a></li>
                 <li><a href=""></a></li>
             </ul>
-	</div>    
+	    </div>
     </div>
+
 ### 3) Куча спичей по различным темам + русские субтитры.
 [TED](http://www.ted.com/translate/languages/ru)
 
