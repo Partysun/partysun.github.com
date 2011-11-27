@@ -16,7 +16,8 @@ permalink: /2011/20/open-digest/
 div#page>div.logo+ul#navigation>li*5>a
 
 Преобразуется:
-<div id="page">
+
+    <div id="page">
         <div class="logo"></div>
 	        <ul id="navigation">
 		                <li><a href=""></a></li>
