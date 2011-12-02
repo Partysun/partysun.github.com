@@ -43,7 +43,7 @@
 .highlight .mo { color: #ae81ff } /* Literal.Number.Oct */
 .highlight .sb { color: #d88200 } /* Literal.String.Backtick */
 .highlight .sc { color: #d88200 } /* Literal.String.Char */
-.highlight .sd { color: #d88200 } /* Literal.String.Doc */
+.highlight .sd { color: #d88200; background-color: none; } /* Literal.String.Doc */
 .highlight .s2 { color: #d88200 } /* Literal.String.Double */
 .highlight .se { color: #8045FF } /* Literal.String.Escape */
 .highlight .sh { color: #d88200 } /* Literal.String.Heredoc */
