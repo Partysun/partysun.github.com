@@ -10,6 +10,7 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/ipad.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/pygments-monokai-light.css" type="text/css" media="screen" charset="utf-8" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <!--[if lt IE 9]>  
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
@@ -38,12 +39,12 @@
 <body>
 
 <header>
-  <a href="/">
+  <a href="/blog">
     <img src="/images/apple-touch-icon.png" class="avatar" />
   </a>
 
   <div id="me">
-    <a href="/">
+    <a href="/blog">
       <span id="zatsepin">Зацепин</span>
       <span id="yura">Юрий</span>      
     </a>
@@ -62,6 +63,7 @@
       <li><a href="/about">Обо мне</a></li>
       <li><a href="/talks">Доклады</a></li>
       <li><a href="/">Статьи</a></li>
+      <li><a href="tabout.html">Проба</a></li>
     </ul>
     <img id="html-logo" src="/images/HTML5.png" width="48" height="48" alt="HTML5 Powered with CSS3 / Styling, Device Access, and    Semantics" title="HTML5 Powered with CSS3 / Styling, Device Access, and Semantics">    
   </nav>
@@ -84,53 +86,57 @@
   <a href="/2011/20/open-digest/">Воскресный Дайджест</a>
 </h1>
 <div class="authoring">
-  November 20, 2011
+  November 27, 2011
 </div>
 
     <p>Это то, что нравится мне в сети, в open source и в жизни. То что попробовал и понравилось.</p>
 
-<h3>1) Читалка для браузера от Evernote &ndash; Clearly »</h3>
+<h3>1) Компания thoughtbot</h3>
 
-<p><a href="http://www.evernote.com/about/download/clearly.php">Потрясающее расширение для Chrome</a> .</p>
+<p>Эта компания имеет свой взгляд на мир, который постояно пополняется новыми знаниями. Все эти знания они систематизаруют в философию. Ее можно найти на их сайте.
+<a href="http://playbook.thoughtbot.com/">Философия американской интернет компании</a> .</p>
 
-<p><img src="http://blog.evernote.com/wp-content/uploads/2011/11/evernote_clearly.png"></img></p>
+<h3>2) Интересный способ для быстрой верстки. Отличный подход к сниппетам.</h3>
 
-<p>Evernote сделали для чтения в интернете просто сумасшедшую вещь.</p>
+<p><a href="http://code.google.com/p/zen-coding/">Дзен Кодинг</a></p>
 
-<p>Открываете статью в интернете, которую хотите прочесть, а она серозеленым шрифтом индокитайской разметки. А статья то интересная. <strong>Что делать?</strong></p>
+<p>К примеру:</p>
 
-<p>Включаете Clearly Evernote и наслаждаетесь от чтения.</p>
+<pre><code>div#page&gt;div.logo+ul#navigation&gt;li*5&gt;a
+</code></pre>
 
-<h3>2) Стэнфордский университет: работать дома эффективнее! »</h3>
+<p>Преобразуется:</p>
 
-<p><a href="http://lifehacker.ru/2011/11/16/homework-rules/">на Lifehacker.ru</a></p>
+<pre><code>&lt;div id="page"&gt;
+    &lt;div class="logo"&gt;&lt;/div&gt;
+        &lt;ul id="navigation"&gt;
+            &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 
-<h3>3) Резюмируя идею бизнеса на одном листе. »</h3>
+<h3>3) Куча спичей по различным темам + русские субтитры.</h3>
 
-<p><a href="http://www.businessmodelgeneration.com/canvas">на www.businessmodelgeneration.com</a></p>
+<p><a href="http://www.ted.com/translate/languages/ru">TED</a></p>
 
-<h3>4) Для поиска вдохновения. »</h3>
+<h3>4) Бесплатный онлайн тренажер скорости печати</h3>
 
-<p><a href="http://curiositycounts.com/">убивалка времени тут</a></p>
+<p><a href="http://www.typeonline.co.uk/">Free Type Lessons</a></p>
 
-<h3>5) Блог программиста. Просто приятный для просмотра. »</h3>
+<h3>5) How-i-Work &ndash; проект о том, как работать(программировать) эффективно.</h3>
 
-<p><a href="http://brokenbrake.biz/">Тормоз тут</a></p>
+<p><a href="http://how-i-work.com/">Ruby(любителям посвящается)</a></p>
 
   </div>
 
   <div class="whoring">
-  <h3>Обсуждения и ссылки</h3>
- 
-  <div id="disqus_thread"></div>
- 
-  <script
-      type="text/javascript"
-      src="http://disqus.com/forums/partysun/embed.js">
-  </script>
-  <noscript>
-      <a href="http://partysun.disqus.com/?url=ref">View the discussion thread.</a>
-  </noscript>  
+  <h3>Обсуждения и ссылки</h3> 
+  
     <div class="copy">
       <a href="https://twitter.com/YuraSun"><img src="/images/apple-touch-icon.png" height="50" width="50" /></a>
       <p>

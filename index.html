@@ -1,17 +1,20 @@
 ---
-layout: layout
-title: "Yura Zatsepin"
+layout: base
+title: "About Yura Zatsepin"
 ---
-
-<div class="content">
-
-<div class="related">
-  <ul>
-  {% for post in site.posts %}
-    <li>
-      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-  </ul>
-  </div>
-</div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascript/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+        $.backstretch("/images/small-bg-1.jpg");
+    </script>
+    <div class="content">
+        <div id="post">
+            <div id="about">
+            <h1>Юрий Зацепин</h1>
+            <p>Программист, немного музыкант и геймдизайнер. Сейчас работаю над лучшим сервисом для музыкантов - TotalLicks.com</p>
+            <p>Живу в Сургуте, Россия. Занимаюсь разработкой инди-игр. Создаю веб и мобильные приложения. Хобби — гитара, настольные игры.</p>
+            <p>Следите за мной в Twitter: (<a href="http://twitter.com/YuraSun">@YuraSun</a>)</p>
+            <a href="/blog">Мой Блог</a>
+            </div>
+        </div>
+    </div>
