@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Драйв 
-permalink: /2011/16/startapp/
+permalink: /2011/17/startapp/
 ---
 
 Сегодня, я решил перемотреть взгляд на блог.
