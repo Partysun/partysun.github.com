@@ -336,3 +336,12 @@ nav #html-logo {
     margin-left: -100px;
     padding: 15px 5px 15px 15px;
 }
+#games {
+    position: absolute;
+    overflow: hidden;
+    width: 100px;
+    min-width: 100px;
+    margin-left: -100px;
+    top: 450px;
+    padding: 15px 5px 15px 15px;
+}
