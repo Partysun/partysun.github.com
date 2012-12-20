@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Процесс разработки Totallicks
+title: Процесс разработки Migrate
 permalink: /2012/20/workflow/
 ---
 
