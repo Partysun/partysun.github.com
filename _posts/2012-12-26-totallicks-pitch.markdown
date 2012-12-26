@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Процесс разработки Migrate
-permalink: /2012/20/workflow/
+title: Новогоднее шоу стартапов и Totallicks!
+permalink: /2012/26/pitch/
 ---
 
 На новогоднем шоу от СтартапАфиша и Intv.cc рассказываю о нашем Totallicks. 
