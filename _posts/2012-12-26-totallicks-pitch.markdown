@@ -14,4 +14,4 @@ permalink: /2012/26/pitch/
 
 "Спасибо за totallicks. Я «два года» ждал такого сайта :)", "Попробовал. Не знаю как для людей с музыкальным опытом — но лично мне сервис кажется дико полезным.", "идея настолько хороша, что имеет бесконечно развитие", "Замечательный сервис. Надеюсь он немного уменьшит количество быдломузыкантов."
 
-<iframe width="420" height="315" src="http://www.youtube.com/watch?v=eEF47Kvnjl0&feature=youtu.be&t=26m10s" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/eEF47Kvnjl0" frameborder="0" allowfullscreen></iframe>
