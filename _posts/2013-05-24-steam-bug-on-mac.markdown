@@ -8,10 +8,12 @@ Steam на Mac печален. Иногда ему сносит голову и 
 
 Лечится очень просто.
 
+
+{% highlight bash %}
 cd /Users/username/Library/Application Support/Steam/
 mv registry.vdf _registry.vdf
+{% endhighlight %}
 
 Все запускаем steam.
 
-----
-Этот пост и далее я буду дублировать в evernote блокноте - <a href="https://www.evernote.com/pub/yurazatsepin/yurazatsepin">Публичный блокнот Yura Zatsepin</a>
+**Этот пост и далее я буду дублировать в evernote блокноте - <a href="https://www.evernote.com/pub/yurazatsepin/yurazatsepin">Публичный блокнот Yura Zatsepin</a>**
